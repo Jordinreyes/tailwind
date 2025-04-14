@@ -1,83 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pagina web para visitar sitios en mallorca" />
-  <meta name="author" content="Jordin Reyes" />
-  <link rel="icon" href="picture/images.jpg" type="image/images.jpg" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pagina web diseñada para visitar sitios en mallorca" />
+    <meta name="author" content="Jordin Reyes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="src/picture/651c781080154477863225.png" type="image/images.png" />
+    <link rel="stylesheet" href="index.CSS">
 </head>
-<body class="font-sans box-border">
-  <section class="min-h-screen bg-[url('picture/fondo.jpg')] bg-cover bg-no-repeat">
-    <header class="fixed top-0 left-0 right-0 w-full h-[150px] flex items-center justify-between z-20">
-      <a href="index.html" title="go to inicio" class="ml-10 max-w-[20rem]">
-        <img src="picture/Logo.png" alt="logo de la pagina web" class="w-full h-auto">
-      </a>
-      <nav class="mr-10">
-        <ul class="flex gap-8 list-none text-white text-sm">
-          <li><a href="#" class="hover:text-black">INICIO <i class="bi bi-plus"></i></a></li>
-          <li><a href="#" class="hover:text-black">PALMA <i class="bi bi-plus"></i></a></li>
-          <li><a href="#" class="hover:text-black">ACTIVIDADES <i class="bi bi-plus"></i></a></li>
-          <li><a href="#" class="hover:text-black">MAPA <i class="bi bi-plus"></i></a></li>
-          <li><a href="#" class="hover:text-black">ACTUALIDAD <i class="bi bi-plus"></i></a></li>
-          <li><a href="#" class="bg-gray-300 px-6 py-3 rounded-full ml-2 hover:bg-[#8B8442] hover:text-white">CONTACTAR <i class="bi bi-arrow-right"></i></a></li>
-          <li><a href="#" class="hover:text-black">ES <i class="bi bi-chevron-down transition duration-500"></i></a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+    <section class="min-h-screen" id="container__section" style="background: url(src/picture/fondo.jpg); background-size: cover; background-repeat: no-repeat;">
+        <header class="fixed top-0 left-0 right-0 w-full grid grid-cols-12 items-center pt-10 z-20" id="header">
 
-    <div class="absolute top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-end gap-5">
-      <a href="#" class="border-2 border-white px-5 py-5 rounded-full text-white hover:bg-[#8B8442]">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a href="#" class="border-2 border-white px-5 py-5 rounded-full text-white hover:bg-[#8B8442]">
-        <i class="bi bi-instagram"></i>
-      </a>
-    </div>
+            <!-- LOGO -->
+            <div class="col-start-1 col-end-6 pl-10 max-w-[20rem]">
+                <a href="index.html">
+                    <img src="src/picture/Logo.png" alt="logo de la navbar" class="w-full h-auto" id="image"/>
+                </a>
+            </div>
+        
+            <!-- NAVBAR -->
+            <nav class="col-start-6 col-end-13 pr-10" id="navbar">
+                <ul class="flex gap-8 list-none text-white text-sm justify-end">
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-black transition duration-500">INICIO</a>
+                        <img src="src/icons/plus.svg" alt="plus icon" />
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-black transition duration-500">PALMA</a>
+                        <img src="src/icons/plus.svg" alt="plus icon" />
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-black transition duration-500">ACTIVIDADES</a>
+                        <img src="src/icons/plus.svg" alt="plus icon" />
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-black transition duration-500">MAPA</a>
+                        <img src="src/icons/plus.svg" alt="plus icon" />
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#" class="hover:text-black transition duration-500">ACTUALIDAD</a>
+                        <img src="src/icons/plus.svg" alt="plus icon" />
+                    </li>
+                    <li>
+                        <a href="#" class="bg-[#A9A095] px-6 py-3 rounded-full ml-2 hover:bg-[#8B8442] transition duration-500" id="contactar">
+                            CONTACTAR <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-black">ES <i class="bi bi-chevron-down transition duration-500"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
 
-    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white text-sm">
-      <p class="mb-2">SCROLL DOWN</p>
-      <img src="picture/ScrollDown-2.png" alt="scroll down para que pueda ir hacia abajo" class="h-[100px] mx-auto" />
-    </div>
-  </section>
-
-  <main class="min-h-[200vh] bg-white">
-    <section class="flex items-center justify-between h-screen px-[5%] gap-10">
-      <!-- Texto -->
-      <article class="flex-1">
-        <div>
-          <h1 class="text-[2.5rem] text-[#2f528f] font-serif font-medium leading-snug">
-            EL SABOR DEL MEDITERRÁNEO EN SU MÁXIMA EXPRESIÓN
-          </h1>
+        <!-- BOTONES MEDIO DE FACEBOOK Y INSTAGRAM -->
+        <div class="absolute top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-end gap-2">
+            <a href="#" class="border-2 border-white w-[52px] h-[52px] rounded-full flex items-center justify-center text-white hover:bg-[#8B8442]" title="go to facebook">
+                <img src="src/icons/fb.svg" alt="logo de facebook de la seccion header" class="w-6 h-6" />
+            </a>
+            <a href="#" class="border-2 border-white w-[52px] h-[52px] rounded-full flex items-center justify-center text-white hover:bg-[#8B8442]" title="go to instagram">
+                <img src="src/icons/ig.svg" alt="logo de instagran de la seccion header" class="w-6 h-6" />
+            </a>
         </div>
-        <div class="mt-5">
-          <p class="text-base text-[#2f528f] leading-relaxed">
-            Palma ha sido reconocida como Capital Gastronómica Europea 2025, un título que celebra la riqueza culinaria, la creatividad de nuestros chefs y la calidad excepcional de nuestros productos locales. En el corazón del Mediterráneo, nuestra ciudad es un punto de encuentro donde la tradición y la innovación se fusionan en cada plato.
-          </p>
-        </div>
-        <div class="mt-8">
-          <div class="flex flex-wrap gap-3">
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS ACONSEJADAS</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ENOTURISMO</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">CULTURA</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ARTESANÍA Y COMPRAS</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS BICICLETA</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">LA CIUDAD</button>
-            <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">MONUMENTOS HISTÓRICOS</button>
-          </div>
-        </div>
-      </article>
 
-      <!-- Imagen -->
-      <article class="flex-1 flex justify-center items-center">
-        <img src="picture/fb3379950e77c2c77a5b21a86efb927c.jpg" alt="Imagen mercado mediterráneo" class="w-[90%] max-w-[350px] rotate-[8deg] rounded-[12px] shadow-[0_10px_25px_rgba(0,0,0,0.1)]">
-      </article>
+        <!-- SCROLL DOWN con animación -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white text-sm">
+            <p class="mb-2">SCROLL DOWN</p>
+            <div class="scroll-container mx-auto">
+                <div class="scroll-bar"></div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <script src="index.js"></script>
+    <main class="min-h-screen bg-[#fff]" id="main">
+        <section class="grid grid-cols-12 items-center h-screen px-[5%] gap-10">
+            <article class="col-start-2 col-end-8">
+                <div>
+                    <h1 class="text-[3rem] text-[#2f528f] font-serif font-medium leading-snug">
+                        EL SABOR DEL <br> MEDITERRÁNEO EN SU <br>MÁXIMA EXPRESIÓN
+                    </h1>
+                </div>
+    
+                <div class="mt-5">
+                    <p class="text-base text-[#2f528f] leading-relaxed">
+                        Palma ha sido reconocida como Capital Gastronómica Europea 2025, un título que celebra la
+                        riqueza culinaria, la creatividad de nuestros chefs y la calidad excepcional de nuestros
+                        productos locales...
+                    </p>
+                </div>
+    
+                <div class="mt-8">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS ACONSEJADAS</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ENOTURISMO</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">CULTURA</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ARTESANÍA Y COMPRAS</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS BICICLETA</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">LA CIUDAD</button>
+                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">MONUMENTOS HISTÓRICOS</button>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="col-start-9 col-end-12 flex justify-center items-center">
+                <img class="w-[90%] max-w-[350px] rotate-[6.3deg] rounded-[12px] shadow-[0_10px_25px_rgba(0,0,0,0.1)]"
+                    src="src/picture/fb3379950e77c2c77a5b21a86efb927c.jpg"
+                    alt="foto de unas preciosas rosas" />
+            </article>
+        </section>
+    </main>
+    
 </body>
+    <script src="index.js"></script>
 </html>

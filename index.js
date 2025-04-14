@@ -1,10 +1,9 @@
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('.header')
-    const main = document.querySelector('.main')
-    const mainTop = main.getBoundingClientRect().top
-
-    if (mainTop <= 150)
-        header.classList.add('scrolled')
-    else
-        header.classList.remove('scrolled')
-})
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    const main = document.getElementById('main');
+    if (window.scrollY > main.offsetTop - header.offsetHeight) {
+        header.classList.add('header-white');
+    } else {
+        header.classList.remove('header-white');
+    }
+});
