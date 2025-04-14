@@ -1,0 +1,8 @@
+<div class="absolute top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-end gap-2">
+    <a href="#" class="w-[72px] h-[72px] p-6 border border-white rounded-full flex items-center justify-center hover:bg-[#8B8442]" title="go to facebook">
+        <img src="src/icons/fb.svg" alt="logo de facebook" class="w-6 h-6" />
+    </a>
+    <a href="#" class="w-[72px] h-[72px] p-6 border border-white rounded-full flex items-center justify-center hover:bg-[#8B8442]" title="go to instagram">
+        <img src="src/icons/ig.svg" alt="logo de instagram" class="w-6 h-6" />
+    </a>
+</div>
