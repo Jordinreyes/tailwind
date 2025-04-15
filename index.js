@@ -7,3 +7,10 @@ window.addEventListener('scroll', () => {
         header.classList.remove('header-white');
     }
 });
+
+new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    grabCursor: true,
+    freeMode: true,
+  });

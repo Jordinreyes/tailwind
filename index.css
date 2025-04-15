@@ -1,3 +1,9 @@
+#container__section {
+    background: url(src/picture/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .scroll-container {
     width: 4px;
     height: 50px;
@@ -55,3 +61,23 @@
 .header-white #image {
     filter: invert(38%) sepia(79%) saturate(513%) hue-rotate(187deg) brightness(90%) contrast(85%) !important;
 }
+
+/* EFECTO BORDER RADIUS BOTONES*/
+#items__buttons button {
+    border-radius: 30px;
+    transition: 1s ease;
+}
+
+#items__buttons button:hover {
+    border-radius: 0;
+}
+
+/*SECTION PALMA*/
+#section__palma {
+    background: url(src/picture/97b3680aa626a572d1e4d555672d4509.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;
+}
+

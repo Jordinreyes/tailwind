@@ -11,65 +11,77 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="src/picture/images.jpg" type="image/images.png" />
     <link rel="stylesheet" href="index.CSS">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
-    <section class="min-h-screen" id="container__section" style="background: url(src/picture/fondo.jpg); background-size: cover; background-repeat: no-repeat;">
+    <section class="min-h-screen" id="container__section">
         <header class="fixed top-0 left-0 right-0 w-full grid grid-cols-12 items-center pt-10 z-20" id="header">
 
             <!-- LOGO -->
-            <div class="col-start-1 col-end-6 pl-10 max-w-[20rem]">
+            <div class="col-start-1 col-end-3 pl-10 max-w-[20rem]">
                 <a href="index.html">
                     <img src="src/picture/Logo.png" alt="logo de la navbar" class="w-full h-auto" id="image"/>
                 </a>
             </div>
-        
+
             <!-- NAVBAR -->
-            <nav class="col-start-6 col-end-13 pr-10" id="navbar">
-                <ul class="flex gap-8 list-none text-white text-sm justify-end">
+            <nav class="col-start-6 col-end-13 pr-15" id="navbar">
+                <ul class="flex gap-10 list-none text-white text-sm justify-end">
                     <li class="flex items-center">
-                        <a href="#" class="hover:text-black transition duration-500">INICIO</a>
-                        <img src="src/icons/plus.svg" alt="plus icon" />
+                        <a href="#" title="go to inicio" class="hover:text-black transition duration-500 text-sm">INICIO</a>
+                        <img src="src/icons/plus.svg" alt="logo plus de los navbar" />
                     </li>
+
                     <li class="flex items-center">
-                        <a href="#" class="hover:text-black transition duration-500">PALMA</a>
-                        <img src="src/icons/plus.svg" alt="plus icon" />
+                        <a href="#" title="go to palma" class="hover:text-black transition duration-500 text-sm">PALMA</a>
+                        <img src="src/icons/plus.svg" alt="logo plus de los navbar" />
                     </li>
+
                     <li class="flex items-center">
-                        <a href="#" class="hover:text-black transition duration-500">ACTIVIDADES</a>
-                        <img src="src/icons/plus.svg" alt="plus icon" />
+                        <a href="#" title="go to activity"
+                            class="hover:text-black transition duration-500 text-sm">ACTIVIDADES</a>
+                        <img src="src/icons/plus.svg" alt="logo plus de los navbar" />
                     </li>
+
                     <li class="flex items-center">
-                        <a href="#" class="hover:text-black transition duration-500">MAPA</a>
-                        <img src="src/icons/plus.svg" alt="plus icon" />
+                        <a href="#" title="go to map" class="hover:text-black transition duration-500 text-sm">MAPA</a>
+                        <img src="src/icons/plus.svg" alt="logo plus de los navbar" />
                     </li>
+
                     <li class="flex items-center">
-                        <a href="#" class="hover:text-black transition duration-500">ACTUALIDAD</a>
-                        <img src="src/icons/plus.svg" alt="plus icon" />
+                        <a href="#" title="go to actualidad"
+                            class="hover:text-black transition duration-500 text-sm">ACTUALIDAD</a>
+                        <img src="src/icons/plus.svg" alt="logo plus de los navbar" />
                     </li>
-                    <li>
+
+                    <li class="flex items-center">
                         <a href="#" class="bg-[#A9A095] px-6 py-3 rounded-full ml-2 hover:bg-[#8B8442] transition duration-500" id="contactar">
                             CONTACTAR <i class="bi bi-arrow-right"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="hover:text-black">ES <i class="bi bi-chevron-down transition duration-500"></i></a>
+
+                    <li class="flex items-center">
+                        <a href="#" title="go to language" class="hover:text-black text-sm">
+                            ES <i class="bi bi-chevron-down transition duration-500"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        
 
-        <!-- BOTONES MEDIO DE FACEBOOK Y INSTAGRAM -->
+        <!-- DIV BOTONES MEDIO DE FACEBOOK Y INSTAGRAM -->
         <div class="absolute top-1/2 right-10 transform -translate-y-1/2 flex flex-col items-end gap-2">
             <a href="#" class="border-2 border-white w-[52px] h-[52px] rounded-full flex items-center justify-center text-white hover:bg-[#8B8442]" title="go to facebook">
-                <img src="src/icons/fb.svg" alt="logo de facebook de la seccion header" class="w-6 h-6" />
+                <img src="src/icons/fb.svg" alt="logo de facebook de la seccion header" class="w-6 h-6"/>
             </a>
             <a href="#" class="border-2 border-white w-[52px] h-[52px] rounded-full flex items-center justify-center text-white hover:bg-[#8B8442]" title="go to instagram">
-                <img src="src/icons/ig.svg" alt="logo de instagran de la seccion header" class="w-6 h-6" />
+                <img src="src/icons/ig.svg" alt="logo de instagran de la seccion header" class="w-6 h-6"/>
             </a>
         </div>
 
-        <!-- SCROLL DOWN con animación -->
+        <!-- DIV DE SCROOLL DOWN -->
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white text-sm">
             <p class="mb-2">SCROLL DOWN</p>
             <div class="scroll-container mx-auto">
@@ -82,80 +94,263 @@
         <section class="grid grid-cols-12 items-center h-screen px-[5%] gap-10">
             <article class="col-start-2 col-end-8">
                 <div>
-                    <h1 class="text-[3rem] text-[#2f528f] font-serif font-medium leading-snug">
+                    <h1 class="text-[3rem] text-[#2f528f] leading-snug">
                         EL SABOR DEL <br> MEDITERRÁNEO EN SU <br>MÁXIMA EXPRESIÓN
                     </h1>
                 </div>
-    
+
                 <div class="mt-5">
                     <p class="text-base text-[#2f528f] leading-relaxed">
-                        Palma ha sido reconocida como Capital Gastronómica Europea 2025, un título que celebra la
-                        riqueza culinaria, la creatividad de nuestros chefs y la calidad excepcional de nuestros
-                        productos locales...
+                        Palma ha sido reconocida como Capital Gastronómica Europea 2025, un título que celebra la riqueza culinaria, la creatividad de nuestros chefs y la calidad excepcional de nuestros productos locales. En el corazón del Mediterráneo, nuestra ciudad es un punto de encuentro donde la tradición y la innovación se fusionan en cada plato.
                     </p>
                 </div>
-    
+
                 <div class="mt-8">
-                    <div class="flex flex-wrap gap-2">
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS ACONSEJADAS</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ENOTURISMO</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">CULTURA</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">ARTESANÍA Y COMPRAS</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">RUTAS BICICLETA</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">LA CIUDAD</button>
-                        <button class="border border-[#b5a973] px-5 py-2 rounded-full text-[#5a5a5a] text-sm hover:bg-[#b5a973] hover:text-white">MONUMENTOS HISTÓRICOS</button>
+                    <div class="flex flex-wrap gap-2" id="items__buttons">
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm">
+                            RUTAS ACONSEJADAS
+                        </button>
+
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm hover">
+                            ENOTURISMO
+                        </button>
+
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm hover">
+                            CULTURA
+                        </button>
+                        
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm">
+                            ARTESANÍA Y COMPRAS
+                        </button>
+
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm">
+                            RUTAS BICICLETA
+                        </button>
+
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm">
+                            LA CIUDAD
+                        </button>
+
+                        <button class="border border-[#b5a973] px-5 py-2 text-[#b5a973] text-sm">
+                            MONUMENTOS HISTÓRICOS
+                        </button>
                     </div>
                 </div>
             </article>
-    
-            <article class="col-start-9 col-end-12 flex justify-center items-center">
+
+            <article class="col-start-9 col-end-12 flex justify-center items-center" id="section__mediterraneo">
                 <img class="w-[90%] max-w-[350px] rotate-[6.3deg] rounded-[12px] shadow-[0_10px_25px_rgba(0,0,0,0.1)]"
-                    src="src/picture/fb3379950e77c2c77a5b21a86efb927c.jpg"
-                    alt="foto de unas preciosas rosas" />
+                    src="src/picture/fb3379950e77c2c77a5b21a86efb927c.jpg" alt="foto de unas preciosas rosas"/>
             </article>
         </section>
     </main>
     
-    <section class="min-h-screen bg-white px-6 py-12">
-        <article class="grid grid-cols-12 gap-4 relative">
+    <section class="min-h-screen grid grid-cols-12 gap-4 relative px-6 py-12" id="galeria" style="border: 2px solid #f00;">
+        <div class="col-start-1 col-span-3 z-0">
+            <img src="src/picture/1fbe079523492763cb71143d9d360632.jpg" alt="Pasteles"
+            class="w-full object-cover rounded-2xl shadow-lg">
+        </div>
 
-            <div class="col-start-1 col-span-4 z-0">
-                <img src="src/picture/1fbe079523492763cb71143d9d360632.jpg" alt="Pasteles"
-                class="w-[344px] h-[472px] object-cover rounded-2xl shadow-lg">
-            </div>
+        <div class="col-start-4 col-span-6 z-10 text-center">
+            <h2 class="text-5xl font-light tracking-widest text-[#43699B] leading-snug mb-5">
+              UNA EXPERIENCIA ÚNICA<br> PARA LOS SENTIDOS
+            </h2>
+        </div>
 
-            <div class="col-start-3 col-span-3 z-10" style="margin-top: -90%;">
-                <img src="src/picture/e7c2ce406f6b5c279486c12dcb326fe0.jpg" alt="Playa al atardecer"
-                     class="w-full object-cover rounded-2xl shadow-xl">
-            </div>
-    
-            <div class="col-start-5 col-span-6 text-center z-20">
-                <h2 class="text-4xl font-light tracking-widest text-[#4A3E55] leading-snug mb-6">
-                  UNA EXPERIENCIA ÚNICA<br>PARA LOS SENTIDOS
-                </h2>
-              </div>
-    
-            <div class="col-start-6 col-span-3 text-sm text-[#4A3E55] space-y-4">
-                <h3 class="text-[#B97B4E] text-lg font-semibold">PRODUCTOS LOCALES,<br>COCINA DE AUTOR</h3>
-                <p>
-                    Desde los mercados llenos de color hasta los restaurantes con estrella Michelin, Palma ofrece un viaje sensorial que conquista el paladar.
-                    La combinación de ingredientes frescos, recetas ancestrales y técnicas vanguardistas hacen de nuestra cocina un referente mundial.
-                    Nuestra despensa es un tesoro que inspira a chefs y artesanos gastronómicos a crear auténticas obras de arte comestibles.
-                </p>
-                <button class="inline-flex items-center gap-2 bg-[#4A3E55] text-white px-5 py-2 rounded-full text-sm hover:bg-[#3a2f45] transition">
-                    VER RUTAS <i class="bi bi-arrow-right"></i>
-                </button>
-            </div>
-    
-            <div class="col-start-12 row-span-full z-0">
-                <img src="src/picture/3b4577e700edf2e5e984958b2f5e4e58.jpg" alt="Limonero"
-                    class="w-full h-full object-cover rounded-2xl shadow-lg">
-            </div>
-    
-        </article>
+        <div class="col-start-3 col-span-3 z-10" style="margin-top: -90%;">
+            <img src="src/picture/e7c2ce406f6b5c279486c12dcb326fe0.jpg" alt="Playa al atardecer"
+            class="w-full object-cover rounded-2xl shadow-xl">
+        </div>
+        
+        <div class="col-start-11 col-span-2 row-span-full z-0">
+            <img src="src/picture/3b4577e700edf2e5e984958b2f5e4e58.jpg" alt="Limonero"
+            class="w-full h-full object-cover rounded-2xl shadow-lg">
+        </div>     
     </section>
     
+    <section id="section__palma" class="h-[70vh] grid grid-cols-12 gap-4 relative bg-cover bg-center">
+        <article class="absolute inset-0 bg-[#792A45CC] grid grid-cols-12 gap-4">
+            <div class="col-start-2 col-end-6 flex flex-col justify-center gap-4">
+                <div>
+                    <p class="text-white text-5xl  leading-tight">
+                        LOS SABORES QUE <br> DEFINEN PALMA
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-white">
+                        Palma es sinónimo de diversidad gastronómica. Cada rincón de la ciudad ofrece una experiencia culinaria única, desde pequeños bares de tapas hasta restaurantes de alta cocina. La fusión de tradición y modernidad convierte a nuestra ciudad en un destino imprescindible para los amantes de la buena mesa.
+                    </p>
+                </div>
+            </div>
     
+            <div class="col-start-7 col-end-12 grid grid-cols-4 gap-5 content-center">
+                <div class="col-span-2 flex flex-col items-center justify-center">
+                    <p class="text-white text-6xl font-bold">+500</p>
+                    <p class="text-white text-sm text-center mt-[10px]">RESTAURANTES CON COCINA <br>LOCAL E INTERNACIONAL</p>
+                </div>
+
+                <div class="col-span-2 flex flex-col items-center justify-center">
+                    <p class="text-white text-6xl font-bold">+12</p>
+                    <p class="text-white text-sm text-center mt-[10px]">MERCADOS LLENOS DE <br>PRODUCTOS FRESCO</p>
+                </div>
+
+                 <div class="col-span-2 flex flex-col items-center justify-center">
+                    <p class="text-white text-6xl font-bold">+5</p>
+                    <p class="text-white text-sm text-center mt-[10px]">ESTRELLAS MICHELING EN <br>NUESTRA CIUDAD</p>
+                </div>
+
+                <div class="col-span-2 flex flex-col items-center justify-center text-center">
+                    <p class="text-white text-6xl font-bold">+365</p>
+                    <p class="text-white text-sm text-center mt-[10px]">DÍAS PARA DIFRUTAR DEL <br>SABOR DEL MEDITARRÁNEO</p>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+    <section class="grid grid-cols-12 gap-4 px-6 py-12">
+        <div class="col-start-1 col-span-4 flex items-center">
+            <h5 class="text-4xl font-light text-[#43699B] leading-tight">
+                DESCUBRE PALMA, <br> DISFRUTA SU SABOR
+            </h5>
+        </div>
+        
+        <div class="col-start-8 col-span-5 flex flex-col justify-center space-y-4">
+            <p class="text-[#43699B]">
+                Ven y déjate seducir por la esencia gastronómica de Palma. Un destino donde cada bocado cuenta una historia y cada plato es un homenaje a nuestra cultura.
+            </p>
+            <a href="#" class="bg-[#A9A095] px-6 py-3 rounded-full text-white w-fit hover:bg-[#8B8442] transition duration-500">
+                DESCUBRE CADA RINCÓN <i class="bi bi-arrow-right ml-2"></i>
+            </a>
+        </div>
+      
+        <div class="col-start-2 col-span-11 mt-12 overflow-hidden px-4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative w-[344px] h-[532px] rounded-lg overflow-hidden">
+                        <img src="src/picture/61398fb4d5c0f7b504146d08a7ecf88c.jpg" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">SOLLER</h6>
+                            <a href="#" class="text-sm inline-block mt-2 border-b border-white hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide relative w-[344px] h-[532px] rounded-lg overflow-hidden">
+                        <img src="src/picture/c755e187c97d3795d94ae3008901ac0b.jpg" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">VALDEMOSSA</h6>
+                            <a href="#" class="text-sm inline-block mt-2 border-b border-white hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide relative w-[344px] h-[532px] rounded-lg overflow-hidden">
+                        <img src="src/picture/762743585e9835812a105c011ab15ddd.jpg" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">DEIA</h6>
+                            <a href="#" class="text-sm inline-block mt-2 border-b border-white hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide relative w-[344px] h-[532px] rounded-lg overflow-hidden">
+                        <img src="src/picture/8772f5cd039ae943762e27e77ed15e5e.jpg" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">POLLENSA</h6>
+                            <a href="#" class="text-sm inline-block mt-2 border-b border-white hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide relative w-[344px] h-[532px] rounded-lg overflow-hidden">
+                        <img src="src/picture/5afe7b34a6a162d0fe973d743df9e51b.jpg" class="w-full h-full object-cover" />
+                        <div class="absolute bottom-10 left-5 text-white drop-shadow">
+                            <h6 class="text-2xl font-semibold">BANYALBUFAR</h6>
+                            <a href="#" class="text-sm inline-block mt-2 border-b border-white hover:border-gray-300">CONOCER MÁS →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="min-h-screen grid grid-cols-12 gap-4 relative px-6 py-12 bg-white">
+        <div class="col-span-4 z-10 flex flex-col justify-center pl-10 pr-4 space-y-6">
+            <h2 class="text-4xl font-serif leading-tight text-[#43699B]">
+                PRODUCTOS<br>LOCALES, COCINA<br>DE AUTOR
+            </h2>
+
+            <p class="text-sm text-[#43699B]">
+                Aceite de oliva virgen extra, pescados y mariscos del día,<br>
+                embutidos artesanales, vinos de la tierra… Nuestra despensa<br>
+                es un tesoro que inspira a chefs y artesanos gastronómicos a<br>
+                crear auténticas obras de arte comestibles.
+            </p>
+            
+            <button class="w-fit px-5 py-2 text-sm bg-blue-700 text-white rounded-full hover:bg-blue-800 transition">
+                PLANIFICA TU VIAJE →
+            </button>
+        </div>
+      
+        <div class="col-start-6 col-end-13 relative h-full flex items-center justify-end">
+            <img src="src/picture/4efd75d14208fe7284b9521114d56565.jpg"
+                alt="Limonero"
+                class="absolute top-0 right-0 z-10 w-[344px] h-[432px] object-cover rounded-lg shadow-lg" />
+
+            <img src="src/picture/e3c52af012aae2364c36f80689881eb8.jpg"
+                alt="Copa de vino"
+                class="absolute top-[40px] right-[300px] z-20 w-[240px] h-[400px] object-cover rounded-lg shadow-lg" />
+                
+            <img src="src/picture/3b4577e700edf2e5e984958b2f5e4e58.jpg"
+                alt="Aceitunas" class="absolute top-[100px] right-[500px] z-30 w-[300px] h-[440px] object-cover rounded-lg shadow-lg" />
+        </div>
+    </section>
+
+    <footer class="bg-[#436a99] text-white pt-8 pb-4 px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+            <div class="mb-6 md:mb-0">
+                <img src="src/picture/Frame 1520.png" alt="Palma Capital Gastronómica 2025" class="h-14 md:h-16">
+            </div>
+      
+            <div class="flex gap-4">
+                <img src="src/icons/ig.svg" alt="Instagram" class="h-9 w-9 rounded-full bg-[#b4a998] p-2">
+                <img src="src/icons/fb.svg" alt="Facebook" class="h-9 w-9 rounded-full bg-[#b4a998] p-2">
+                <img src="src/icons/youtube.svg" alt="YouTube" class="h-9 w-9 rounded-full bg-[#b4a998] p-2">
+                <img src="src/icons/Twitter.svg" alt="X" class="h-9 w-9 rounded-full bg-[#b4a998] p-2">
+                <img src="src/icons/tiktok.svg" alt="TikTok" class="h-9 w-9 rounded-full bg-[#b4a998] p-2">
+            </div>
+        </div>
+      
+        <nav class="flex flex-wrap gap-x-12 gap-y-4 text-sm mb-4">
+          <a href="#" class="hover:underline whitespace-nowrap">DESCUBRE LA CIUDAD &nbsp;+</a>
+          <a href="#" class="hover:underline whitespace-nowrap">RUTAS GASTRONÓMICAS &nbsp;+</a>
+          <a href="#" class="hover:underline whitespace-nowrap">BODEGAS &nbsp;+</a>
+          <a href="#" class="hover:underline whitespace-nowrap">PLANIFICA TU VIAJE &nbsp;+</a>
+          <a href="#" class="hover:underline whitespace-nowrap">¿QUÉ HACER? &nbsp;+</a>
+          <a href="#" class="hover:underline whitespace-nowrap">ACTUALIDAD</a>
+        </nav>
+      
+        <hr class="border-white/40 my-4">
+      
+        <!-- Botón + links -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-sm gap-4 mb-6">
+            <button class="bg-[#b4a998] text-[#436a99] px-5 py-2 rounded-full flex items-center gap-2 font-medium">
+                <span>📞</span> Contáctanos
+            </button>
+
+            <div class="flex gap-6 flex-wrap justify-center">
+                <a href="#" class="hover:underline">Preguntas frecuentes</a>
+                <a href="#" class="hover:underline">Formulario de contacto</a>
+                <a href="#" class="hover:underline">Oficina de turismo</a>
+            </div>
+        </div> 
+    </footer>
+
+    <div class="bg-[#d3dce6] text-[#436a99] text-xs px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-2">
+        <p>© 2025 Palma Capital Gastronómica 2025. Todos los derechos reservados.</p>
+        <div class="flex gap-4">
+            <a href="#" class="hover:underline">Política de privacidad y protección de datos</a>
+            <a href="#" class="hover:underline">Cookies</a>
+        </div>
+    </div>
+      
 </body>
     <script src="index.js"></script>
 </html>
